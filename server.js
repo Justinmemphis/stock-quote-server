@@ -2,15 +2,38 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const cors = require('cors');
+const request = require('request');
 const axios = require('axios');
 require('dotenv').config();
 
-const app = express();
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.get('/quote', (req, res) => {
+  console.log(req);
+  const options = {
+    method: 'GET',
+    url: 'https://www.alphavantage.co/query',
+    params: {
+      function: 'TIME_SERIES_DAILY',
+      symbol: 'FDX',
+      output_size: 'compact',
+      datatype: 'json',
+      apikey: process.env.REACT_APP_ALPHA_VANTAGE_KEY
+    }
+  };
+
+  axios.request(options).then(function (response) {
+    res.json(response.data);
+  }).catch(function (error) {
+    res.json(error);
+  });
+
 });
 
 const port = process.env.Port || 3000;
