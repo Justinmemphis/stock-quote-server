@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+3. 08/30/22:
+ - Summary - update variable for axios request on alphavantage
+ - Details - update variable for axios request on alphavantage
+ - Goal tomorrow -
+
 2. 08/28/22:
  - Summary - handle API call here at server instead of frontend
  - Details - handle API call here at server instead of frontend

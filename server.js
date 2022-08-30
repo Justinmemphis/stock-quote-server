@@ -21,7 +21,7 @@ app.get('/quote', (req, res) => {
     url: 'https://www.alphavantage.co/query',
     params: {
       function: 'TIME_SERIES_DAILY',
-      symbol: 'FDX',
+      symbol: {newSymbol},
       output_size: 'compact',
       datatype: 'json',
       apikey: process.env.REACT_APP_ALPHA_VANTAGE_KEY
