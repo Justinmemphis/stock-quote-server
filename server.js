@@ -15,13 +15,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/quote', (req, res) => {
-  console.log(req);
+  console.log(req.query.symbol);
+  const mySymbol = req.query.symbol;
   const options = {
     method: 'GET',
     url: 'https://www.alphavantage.co/query',
     params: {
       function: 'TIME_SERIES_DAILY',
-      symbol: {newSymbol},
+      symbol: mySymbol,
       output_size: 'compact',
       datatype: 'json',
       apikey: process.env.REACT_APP_ALPHA_VANTAGE_KEY

@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+4. 08/31/22:
+ - Summary - update API call for variable; fix error message
+ - Details - update API call for variable; fix error message
+ - Goal tomorrow - post to replit
+
 3. 08/30/22:
  - Summary - update variable for axios request on alphavantage
  - Details - update variable for axios request on alphavantage
