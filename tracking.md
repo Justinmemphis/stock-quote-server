@@ -3,7 +3,8 @@ Summary - **********************************************************************
 4. 08/31/22:
  - Summary - update API call for variable; fix error message
  - Details - update API call for variable; fix error message
- - Goal tomorrow - post to replit
+ - Goal tomorrow - post to replit - see link below
+ https://www.google.com/search?q=requested+an+insecure+xmlhttprequest+endpoint+site:stackoverflow.com&sxsrf=ALiCzsZVKrp50AeIWNPWhJHbcQ8cDR4OTQ:1661945939681&sa=X&ved=2ahUKEwja9_qK__D5AhXemmoFHeprBFUQrQIoBHoECAgQBQ&biw=1282&bih=1287&dpr=1.5
 
 3. 08/30/22:
  - Summary - update variable for axios request on alphavantage
