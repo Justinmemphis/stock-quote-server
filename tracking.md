@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+5. 09/01/22:
+ - Summary - fix routing on replit
+ - Details - work on replit porting issue; update meta tag for insecure requests; update proxy
+ - Goal tomorrow - double-check replit working; AWS
+
 4. 08/31/22:
  - Summary - update API call for variable; fix error message
  - Details - update API call for variable; fix error message
