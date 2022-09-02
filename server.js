@@ -20,6 +20,7 @@ app.get('/quote', (req, res) => {
   const options = {
     method: 'GET',
     url: 'https://www.alphavantage.co/query',
+    timeout: 5000,
     params: {
       function: 'TIME_SERIES_DAILY',
       symbol: mySymbol,

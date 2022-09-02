@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+6. 09/02/22:
+ - Summary - add timeout to API call; change routing slightly
+ - Details - add timeout to API call; change routing slightly
+ - Goal tomorrow - (working on d3 chart next)
+
 5. 09/01/22:
  - Summary - fix routing on replit
  - Details - work on replit porting issue; update meta tag for insecure requests; update proxy
