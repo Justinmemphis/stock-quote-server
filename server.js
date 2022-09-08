@@ -24,7 +24,7 @@ app.get('/quote', (req, res) => {
     params: {
       function: 'TIME_SERIES_DAILY',
       symbol: mySymbol,
-      output_size: 'compact',
+      outputsize: 'full',
       datatype: 'json',
       apikey: process.env.REACT_APP_ALPHA_VANTAGE_KEY
     }

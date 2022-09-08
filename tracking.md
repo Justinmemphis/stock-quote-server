@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+7. 09/07/22:
+ - Summary - add charting build from frontend; small tweak to quote API request
+ - Details - add charting build from frontend; small changes to AlphaVantage API request
+ - Goal tomorrow -
+
 6. 09/02/22:
  - Summary - add timeout to API call; change routing slightly
  - Details - add timeout to API call; change routing slightly
