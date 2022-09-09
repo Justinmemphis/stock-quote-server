@@ -1,5 +1,8 @@
 Summary - ************************************************************************ this is 72 characters
 
+8. 09/09/22:
+ - Summary - add new build with various small fixes to quote charting
+
 7. 09/07/22:
  - Summary - add charting build from frontend; small tweak to quote API request
  - Details - add charting build from frontend; small changes to AlphaVantage API request
