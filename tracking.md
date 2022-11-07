@@ -1,5 +1,8 @@
 Summary - ************************************************************************ this is 72 characters
 
+9. 11/07/22:
+ - Summary - the Alpha Vantage API wasn't working so I replaced it with Rapid API (indirect) connection
+
 8. 09/09/22:
  - Summary - add new build with various small fixes to quote charting
 
