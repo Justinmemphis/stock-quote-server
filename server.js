@@ -17,17 +17,21 @@ app.get('/', function (req, res) {
 app.get('/quote', (req, res) => {
   console.log(req.query.symbol);
   const mySymbol = req.query.symbol;
+  const key = process.env.REACT_APP_RAPID_API_KEY;
   const options = {
     method: 'GET',
-    url: 'https://www.alphavantage.co/query',
+    url: 'https://alpha-vantage.p.rapidapi.com/query',
     timeout: 5000,
     params: {
       function: 'TIME_SERIES_DAILY',
       symbol: mySymbol,
       outputsize: 'full',
       datatype: 'json',
-      apikey: process.env.REACT_APP_ALPHA_VANTAGE_KEY
-    }
+    },
+	headers: {
+		'X-RapidAPI-Key': key,
+                'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com'
+	  }
   };
 
   axios.request(options).then(function (response) {
