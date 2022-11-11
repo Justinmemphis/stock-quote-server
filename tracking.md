@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+10. 11/11/22:
+- Summary - worked on hosting this webpage on AWS EC2 instance.
+- Accomplished the following: started EC2 instance, updated packages on Linux distro, installed Nodejs, created AMI for EC2 w/ Node, moved built server file over to EC2, npm install and got server running
+- What to do next - started to modify security groups, can't connect to server currently - get security issues resolved
+
 9. 11/07/22:
  - Summary - the Alpha Vantage API wasn't working so I replaced it with Rapid API (indirect) connection
 
