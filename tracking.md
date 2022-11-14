@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+12. 11/14/22 #2:
+- Summary - terminated EC2 instance (was Amazon Linux 2) and started new instance that is Ubuntu 22.04; got through step 3 of website below
+
+- What to do next - continue through remaining steps
+
 11. 11/14/22:
 - Summary - got port working on EC2 instance (through security group); installed nginx; got test api connection working
 - What to do next - keep working on nginx; see this website:
