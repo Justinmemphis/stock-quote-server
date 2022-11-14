@@ -1,5 +1,10 @@
 Summary - ************************************************************************ this is 72 characters
 
+11. 11/14/22:
+- Summary - got port working on EC2 instance (through security group); installed nginx; got test api connection working
+- What to do next - keep working on nginx; see this website:
+ https://towardsdev.com/deploying-a-react-node-mysql-app-to-aws-ec2-2022-1dfc98496acf
+
 10. 11/11/22:
 - Summary - worked on hosting this webpage on AWS EC2 instance.
 - Accomplished the following: started EC2 instance, updated packages on Linux distro, installed Nodejs, created AMI for EC2 w/ Node, moved built server file over to EC2, npm install and got server running
