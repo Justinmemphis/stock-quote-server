@@ -1,5 +1,9 @@
 Summary - ************************************************************************ this is 72 characters
 
+13. 11/15/22:
+- Summary - running into issues with content security policy - installed helmet but still need to fix CORS issue (or helmet policy)
+- What to do next - see how to get it working
+
 12. 11/14/22 #2:
 - Summary - terminated EC2 instance (was Amazon Linux 2) and started new instance that is Ubuntu 22.04; got through step 3 of website below
 
