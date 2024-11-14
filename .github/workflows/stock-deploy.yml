@@ -1,0 +1,44 @@
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Start SSH Agent
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
+
+    - name: Install rsync
+      run: sudo apt-get update && sudo apt-get install -y rsync
+
+    - name: Test SSH Connection
+      env:
+        HOST: ${{ secrets.EC2_HOST }}
+        USER: ${{ secrets.EC2_USER }}
+      run: |
+        ssh -o StrictHostKeyChecking=no $USER@$HOST "echo 'SSH connection successful'"
+
+    - name: Test rsync on EC2
+      env:
+        HOST: ${{ secrets.EC2_HOST }}
+        USER: ${{ secrets.EC2_USER }}
+      run: |
+        ssh -o StrictHostKeyChecking=no $USER@$HOST "rsync --version"
+
+    - name: Check ssh path
+      run: which ssh
+
+    - name: rsync to EC2
+      env:
+        HOST: ${{ secrets.EC2_HOST }}
+        USER: ${{ secrets.EC2_USER }}
+        PATH: ${{ secrets.EC2_PATH_STOCK }}
+      run: |
+        /usr/bin/rsync -avz --exclude '.git' --exclude '.env' --exclude 'events' \
+          -e "/usr/bin/ssh -o StrictHostKeyChecking=no" ./ $USER@$HOST:$PATH
+
