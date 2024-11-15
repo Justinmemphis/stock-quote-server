@@ -17,3 +17,4 @@ I enjoyed building a full stack web application.  Working through connecting eve
 - Move deployment to AWS EC2 (replit has changed how sites are hosted). - in progress
 - Move stock symbol lookup to an API call (so can keep up-to-date)
 - Integrate lookup using either stock symbol or description of stock (maybe a picker to choose between multiple options)
+
