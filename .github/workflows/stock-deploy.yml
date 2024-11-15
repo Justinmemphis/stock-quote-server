@@ -41,4 +41,3 @@ jobs:
       run: |
         /usr/bin/rsync -avz --relative --exclude '.git' --exclude '.env' --exclude 'events' \
           -e "/usr/bin/ssh -o StrictHostKeyChecking=no" ./ $USER@$HOST:$PATH
-
