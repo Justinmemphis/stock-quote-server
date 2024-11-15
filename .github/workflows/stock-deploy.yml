@@ -40,4 +40,5 @@ jobs:
         PATH: ${{ secrets.EC2_PATH_STOCK }}
       run: |
         /usr/bin/rsync -avz -vv --relative --exclude '.git' --exclude '.env' --exclude 'events' \
+          --rsync-path="sudo rsync" \
           -e "/usr/bin/ssh -o StrictHostKeyChecking=no" ./ $USER@$HOST:$PATH
