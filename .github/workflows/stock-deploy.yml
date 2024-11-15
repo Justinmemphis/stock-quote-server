@@ -39,6 +39,6 @@ jobs:
         USER: ${{ secrets.EC2_USER }}
         PATH: ${{ secrets.EC2_PATH_STOCK }}
       run: |
-        /usr/bin/rsync -avz --exclude '.git' --exclude '.env' --exclude 'events' \
+        /usr/bin/rsync -avz --relative --exclude '.git' --exclude '.env' --exclude 'events' \
           -e "/usr/bin/ssh -o StrictHostKeyChecking=no" ./ $USER@$HOST:$PATH
 
